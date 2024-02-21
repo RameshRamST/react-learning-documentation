@@ -34,7 +34,7 @@ function Home() {
 
 
     return (
-        <> <h1>enter</h1><form onSubmit={handleSubmit(sendingData)}>
+        <> <h1 >enter</h1><form onSubmit={handleSubmit(sendingData)}>
             <input type="text" id="textvalues"{...register("name")} />
             <button type="submit">add</button></form>
 
