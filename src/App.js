@@ -31,6 +31,10 @@ import Contact from './component/contact';
 import About from './component/about';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PersonAdd from './component/axios/axios';
+import Persondelete from './component/axios/axios_delete';
+import PersonAddput from './component/axios/axios_put';
+
+
 function App() {
   return (
     <div className="App">
@@ -46,7 +50,11 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="*" element={<p1>no routies availed in here</p1>}
           />
-          <Route path="/axiosinfo" element={ <PersonAdd/>} />
+          <Route path="/axiosinfo" element={<PersonAdd />} />
+          <Route path="/axiosinfo2" element={<Persondelete />} />
+          <Route path="/axiosinfo3" element={<PersonAddput/>} />
+
+          
         </Routes>
       </BrowserRouter>
 
