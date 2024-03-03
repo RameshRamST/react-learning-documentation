@@ -33,7 +33,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import PersonAdd from './component/axios/axios';
 import Persondelete from './component/axios/axios_delete';
 import PersonAddput from './component/axios/axios_put';
-
+import Redux from './component/redux/redux';
 
 function App() {
   return (
@@ -52,7 +52,8 @@ function App() {
           />
           <Route path="/axiosinfo" element={<PersonAdd />} />
           <Route path="/axiosinfo2" element={<Persondelete />} />
-          <Route path="/axiosinfo3" element={<PersonAddput/>} />
+          <Route path="/axiosinfo3" element={<PersonAddput />} />
+          <Route path="/redux" element={<Redux/>} />
 
           
         </Routes>

@@ -32,7 +32,7 @@ export default function PersonUpdate() {
     };
 
     // Call the function if id is set
-    if (id) {
+    if (id) { 
       updatePerson();
     }
   }, [id, personData]); // Dependencies to trigger the effect
